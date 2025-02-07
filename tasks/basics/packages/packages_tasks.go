@@ -35,7 +35,6 @@ func ProcessAllTasks() {
 	typeInference()
 	constants()
 	numericConstants()
-
 }
 
 func helloWorld() { // hello world
@@ -151,5 +150,5 @@ func numericConstants() { // Numeric constants
 	fmt.Println(needInt(Small))   // 21
 	fmt.Println(needFloat(Small)) // 0.2
 	fmt.Println(needFloat(Big))   // 1.2676506002282295e+29
-	fmt.Println(needInt(Big))     // Error: constant 1267650600228229401496703205376 overflows int
+	//fmt.Println(needInt(Big))     // Error: constant 1267650600228229401496703205376 overflows int
 }
