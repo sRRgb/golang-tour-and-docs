@@ -1,0 +1,15 @@
+# Dependency directory (if you're using vendoring)
+vendor/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore environment variable files
+.env
