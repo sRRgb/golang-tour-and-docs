@@ -32,23 +32,27 @@ func ProcessAllTasks() {
 	baseTypes()
 	zeroValues()
 	typeConversions()
+	typeInference()
+	constants()
+	numericConstants()
+
 }
 
 func helloWorld() { // hello world
-	fmt.Println("Привіт, World!")
+	fmt.Println("Hello, World!")
 }
 
 func welcome() { // welcome to the playground
-	fmt.Println("Ласкаво просимо на майданчик!")
-	fmt.Println("Час -", time.Now())
+	fmt.Println("Welcome to Playground")
+	fmt.Println("Time -", time.Now())
 }
 
 func packages() { // Packages
-	fmt.Println("Моє улюблене число:", rand.Intn(10))
+	fmt.Println("My favorite number is:", rand.Intn(10))
 }
 
 func imports() { // Imports
-	fmt.Printf("Тепер ви маєте %g проблем.\n", math.Sqrt(7))
+	fmt.Printf("Now you have %g problems.\n", math.Sqrt(7))
 }
 
 func exportedNames() { // Exported names
@@ -65,7 +69,7 @@ func multipleParamsContinued() { // Function with multiple parameters of the sam
 }
 
 func multipleReturn() { // Multiple return results
-	a, b := swap("Привіт", "світ")
+	a, b := swap("Hello", "World")
 
 	fmt.Println(a, b)
 }
