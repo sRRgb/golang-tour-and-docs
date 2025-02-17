@@ -1,50 +1,22 @@
-# Go Data Types and Formatting
+# Go Quick Reference and Resources
 
-This document provides a quick reference to basic data types in Go and how to format them using the `fmt` package.
+This repository provides a collection of resources for working with the Go programming language.  It covers essential topics, including data types, formatting, memory management, and popular frameworks and libraries.
 
-## Basic Data Types
+## Contents
 
-Go offers a variety of built-in data types:
+* **[Data Types](./docs/types/README.md):**  A quick reference to Go's basic data types and how to format them using `fmt.Printf`.  Includes a table of format specifiers.
 
-* **Booleans:** `bool` (`true` or `false`)
-* **Strings:** `string`
-* **Floating-Point Numbers:** `float32`, `float64`
-* **Complex Numbers:** `complex64`, `complex128`
-* **Integers:** `int`, `int8`, `int16`, `int32`, `int64`
-* **Unsigned Integers:** `uint`, `uint8`, `uint16`, `uint32`, `uint64`, `uintptr`
-* **Byte:** `byte` (alias for `uint8`)
-* **Rune:** `rune` (alias for `int32`, represents a Unicode code point)
+* **[Formatting](./docs/formatting/README.md):**  A quick reference to Go's basic data types and how to format them using `fmt.Printf`.  Includes a table of format specifiers.
 
-## Formatting with `fmt.Printf`
+* **[Frameworks and Libraries](./docs/frameworks/README.md):** A curated list of popular and commonly used Go frameworks and libraries for various purposes, such as web development, databases, CLI tools, and more.
 
-The `fmt.Printf` function allows you to format and print values. Here's a breakdown of the common format specifiers:
+* **[Memory Management](./docs/memory/README.md):** An overview of how Go manages memory, with a focus on the stack and heap.  Explains concepts like escape analysis and provides illustrative examples.
 
-| Specifier | Description                                      | Example                                    | Output                                       |
-|-----------|--------------------------------------------------|--------------------------------------------|-----------------------------------------------|
-| `%v`      | Default format for any value                      | `fmt.Printf("%v", 123)`                     | `123`                                         |
-| `%+v`     | Default format with struct field names           | `fmt.Printf("%+v", Person{"Alice", 30})`    | `{Name:Alice Age:30}`                         |
-| `%#v`     | Go-syntax representation                         | `fmt.Printf("%#v", Person{"Alice", 30})`    | `main.Person{Name:"Alice", Age:30}`            |
-| `%T`      | Prints the type                                 | `fmt.Printf("%T", 3.14)`                    | `float64`                                     |
-| `%t`      | Boolean (`true` or `false`)                           | `fmt.Printf("%t", true)`                    | `true`                                        |
-| `%b`      | Binary representation                            | `fmt.Printf("%b", 10)`                     | `1010`                                        |
-| `%c`      | Unicode character                               | `fmt.Printf("%c", 65)`                     | `A`                                           |
-| `%d`      | Decimal integer                                | `fmt.Printf("%d", 123)`                     | `123`                                         |
-| `%o`      | Octal integer                                  | `fmt.Printf("%o", 64)`                     | `100`                                         |
-| `%q`      | Quoted character or string                      | `fmt.Printf("%q", 65)`                     | `'A'`                                         |
-|           |                                                  | `fmt.Printf("%q", "Hello\nGo")`             | `"Hello\nGo"`                                  |
-| `%x`      | Hexadecimal (lowercase)                         | `fmt.Printf("%x", 255)`                     | `ff`                                          |
-| `%X`      | Hexadecimal (uppercase)                         | `fmt.Printf("%X", 255)`                     | `FF`                                          |
-| `%U`      | Unicode format (U+1234 'char')                   | `fmt.Printf("%U", 9731)`                    | `U+2603 '☃'`                                  |
-| `%e`      | Scientific notation (lowercase) for floats       | `fmt.Printf("%e", 123.456)`                 | `1.234560e+02`                                |
-| `%E`      | Scientific notation (uppercase) for floats       | `fmt.Printf("%E", 123.456)`                 | `1.234560E+02`                                |
-| `%f`      | Decimal floating-point                          | `fmt.Printf("%f", 123.456)`                 | `123.456000`                                  |
-| `%F`      | Same as `%f`                                      | `fmt.Printf("%F", 123.456)`                 | `123.456000`                                  |
-| `%g`      | Compact float format (chooses %e or %f)          | `fmt.Printf("%g", 123.456)`                 | `123.456`                                     |
-| `%G`      | Similar to `%g`, using %E if needed              | `fmt.Printf("%G", 123.456)`                 | `123.456`                                     |
-| `%s`      | Plain string                                    | `fmt.Printf("%s", "Hello")`                 | `Hello`                                       |
-| `%p`      | Pointer address in hexadecimal                  | `fmt.Printf("%p", &x)`                     | `0x...` (an address)                          |
-| `%%`      | Literal percent sign                             | `fmt.Printf("%%")`                         | `%`                                           |
 
-**Note:**  The example using `%p` requires a variable `x` to have been declared.  The output will be the memory address of that variable.  The example for `%+v` and `%#v` assumes a struct named `Person` with fields `Name` and `Age`.
+## How to Use
 
-This table provides a concise overview of the most commonly used format specifiers. Refer to the official Go documentation for a complete list and more details.
+Each directory contains a `README.md` file with detailed information on the specific topic.  Simply navigate to the directory of interest and open the `README.md` file to access the relevant content.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or additions, please feel free to submit a pull request.
