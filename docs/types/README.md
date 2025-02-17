@@ -78,7 +78,7 @@ func (p Person) Greet() {
 person.Greet() // Calling a method
 ```
 
-## Structs
+## Pointers
 
 Pointers hold the memory address of a value. They are declared using the * operator.
 
@@ -99,7 +99,7 @@ var y int = 20
 
 // x and y are of different types, even though MyInt is an alias for int.
 ```
-## Type Aliases
+## Constants
 
 Constants are values that are known at compile time and cannot be changed. They are declared using the `const` keyword.
 
