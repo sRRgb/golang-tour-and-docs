@@ -16,7 +16,7 @@ const Small = Big >> 99 // numeric constant
 
 var c, python, java bool // Variables on the package level
 
-func ProcessAllTasks() {
+func ProcessPackagesTasks() {
 	helloWorld()
 	welcome()
 	packages()
