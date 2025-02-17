@@ -4,13 +4,13 @@ This repository provides a collection of resources for working with the Go progr
 
 ## Contents
 
-* **[Data Types](./docs/types/README.md):**  A quick reference to Go's basic data types and how to format them using `fmt.Printf`.  Includes a table of format specifiers.
+* **Data Types [[ENG]](./docs/types/README.md) | [[UA]](./docs/types/README_UA.md):**  A quick reference to Go's basic data types and how to format them using `fmt.Printf`.  Includes a table of format specifiers.
 
-* **[Formatting](./docs/formatting/README.md):**  A quick reference to Go's basic data types and how to format them using `fmt.Printf`.  Includes a table of format specifiers.
+* **Formatting [[ENG]](./docs/formatting/README.md) | [[UA]](./docs/formatting/README_UA.md):**  A quick reference to Go's basic data types and how to format them using `fmt.Printf`.  Includes a table of format specifiers.
 
-* **[Frameworks and Libraries](./docs/frameworks/README.md):** A curated list of popular and commonly used Go frameworks and libraries for various purposes, such as web development, databases, CLI tools, and more.
+* **Frameworks and Libraries [[ENG]](./docs/frameworks/README.md) | [[UA]](./docs/frameworks/README_UA.md):** A curated list of popular and commonly used Go frameworks and libraries for various purposes, such as web development, databases, CLI tools, and more.
 
-* **[Memory Management](./docs/memory/README.md):** An overview of how Go manages memory, with a focus on the stack and heap.  Explains concepts like escape analysis and provides illustrative examples.
+* **Memory Management [[ENG]](./docs/memory/README.md) | [[UA]](./docs/memory/README_UA.md):** An overview of how Go manages memory, with a focus on the stack and heap.  Explains concepts like escape analysis and provides illustrative examples.
 
 
 ## How to Use
