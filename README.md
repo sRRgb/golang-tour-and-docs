@@ -5,8 +5,8 @@ topics, including data types, formatting, memory management, and popular framewo
 
 ## Contents
 
-* **Data Types [[ENG]](./docs/types/README.md) | [[UA]](./docs/types/README_UA.md):**  A quick reference to Go's basic
-  data types and how to format them using `fmt.Printf`. Includes a table of format specifiers.
+* **Data Types [[ENG]](./docs/types/README.md) | [[UA]](./docs/types/README_UA.md):**  An overview of Go's basic data
+  types, including integers, floats, strings, booleans, and more. Includes examples and explanations of each type.
 
 * **Formatting [[ENG]](./docs/formatting/README.md) | [[UA]](./docs/formatting/README_UA.md):**  A quick reference to
   Go's basic data types and how to format them using `fmt.Printf`. Includes a table of format specifiers.
